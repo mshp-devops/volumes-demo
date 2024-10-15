@@ -1,0 +1,4 @@
+config/*
+userfiles/*
+venv
+.venv

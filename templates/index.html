@@ -1,0 +1,22 @@
+<html lang="ru">
+<head>
+  <title>MyPicWebsite</title>
+</head>
+<body>
+<h2>Моя конфигурация:</h2>
+<p>
+  {{config}}
+</p>
+<h2>Мои файлы</h2>
+<p>
+  {{userfiles}}
+</p>
+
+<form method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
